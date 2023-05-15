@@ -259,7 +259,7 @@ text-align: center;
         <div class="row justify-content-between">
             <!-- start -->
         <div class="top-section_left w-60">
-           <img src="./images/img1.jpeg" alt="" srcset=""class="w-100">
+           <img  height=" 383px" src="./images/img1.jpeg" alt="" srcset=""class="w-100" id="bg_img">
         </div>
         <!-- end -->
         <!-- start -->
@@ -370,8 +370,16 @@ menue.addEventListener("click",function(){
   }
   
 })
+// change image 
+let bg_img=document.getElementById("bg_img");
+bg_img.addEventListener("mouseover",function(){
+bg_img.setAttribute("src","images/bg2.jpeg");
+})
 
 
+bg_img.addEventListener("mouseout",function(){
+bg_img.setAttribute("src","images/img1.jpeg");
+})
 </script>
 </body>
 </html>
